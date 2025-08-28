@@ -126,8 +126,4 @@ Network Monitoring System with ML-based Device Priority**.
 4.  **Focus on ML integration:** Historical data → priority scoring.\
 5.  **Dashboard last:** Only after backend + ML pipeline are clear.
 
-------------------------------------------------------------------------
 
-✅ By the end of **12 weeks**, you'll have a text-documented, test-ready
-**MVP model** of a customizable network monitoring system with **custom
-protocol support and ML-based device prioritization**.
