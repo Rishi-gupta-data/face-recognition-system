@@ -37,7 +37,7 @@ This tool is intended for IT admins, network engineers, and enterprises that req
 This tool will act as a standalone platform with optional API integration for enterprise systems. It will collect and process network traffic data using packet sniffing and system APIs.  
 
 ### 2.2 Product Features  
-- **Traffic Monitoring**: Capture real-time traffic by IP, port, protocol.  
+- **Traffic Monitoring**: Capture real-time traffic by IP, port, protocol, Packages.  
 - **Visualization**: Dashboard with charts/graphs of bandwidth usage.  
 - **Control Mechanisms**: Block, allow, throttle connections.  
 - **Alerts**: Notify admin on unusual traffic or suspicious activity.  
@@ -145,3 +145,4 @@ This tool will act as a standalone platform with optional API integration for en
 
 ## 7. Appendices  
 - Future roadmap may include AI-based anomaly detection, VPN integration, and multi-cloud monitoring.  
+
