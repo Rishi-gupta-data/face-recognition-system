@@ -96,7 +96,7 @@ Build a system that automates **face detection, identification, suspicious activ
 
 ### 5.1 High-Level Flowchart  
 
-\`\`\`mermaid
+```mermaid
 flowchart TD
     A[Start CCTV Feed] --> B{Face Detected?}
     B -->|Yes| C[Extract Face Features]
@@ -108,13 +108,12 @@ flowchart TD
     F --> G
     G -->|Yes| H[Trigger Alarm & Notify Security]
     G -->|No| A
-\`\`\`
 
 ---
 
 ## 6. Use Case Diagram  
 
-\`\`\`mermaid
+```mermaid
 usecaseDiagram
 actor Admin
 actor Security
@@ -130,8 +129,6 @@ system "Face Recognition Security" {
   (Suspicious Activity Detection)
   (Recorded Video Search)
 }
-\`\`\`
-
 ---
 
 ## 7. Database Schema  
