@@ -108,7 +108,7 @@ flowchart TD
     F --> G
     G -->|Yes| H[Trigger Alarm & Notify Security]
     G -->|No| A
-
+```
 ---
 
 ## 6. Use Case Diagram  
@@ -129,6 +129,7 @@ system "Face Recognition Security" {
   (Suspicious Activity Detection)
   (Recorded Video Search)
 }
+```
 ---
 
 ## 7. Database Schema  
@@ -155,7 +156,7 @@ system "Face Recognition Security" {
 
 ## 8. System Architecture  
 
-\`\`\`mermaid
+```mermaid
 flowchart LR
     User --> Dashboard
     Dashboard --> Backend[Flask/Django Backend]
@@ -163,7 +164,7 @@ flowchart LR
     Backend --> AI[Face Recognition Engine]
     AI --> CCTV[CCTV/Recorded Video]
     Backend --> Alerts[Notification Service]
-\`\`\`
+```
 
 ---
 
