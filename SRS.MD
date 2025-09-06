@@ -114,6 +114,7 @@ flowchart TD
 ## 6. Use Case Diagram  
 
 ```mermaid
+%% Use Case Diagram for Face Recognition Security System
 usecaseDiagram
 actor Admin
 actor Security
@@ -129,8 +130,7 @@ system "Face Recognition Security" {
   (Suspicious Activity Detection)
   (Recorded Video Search)
 }
-```
----
+
 
 ## 7. Database Schema  
 
