@@ -76,7 +76,8 @@ Build a system that automates **face detection, identification, suspicious activ
    - AI model trained for detecting actions like:  
      - Breaking glass, vandalism.  
      - Unauthorized entry at night.  
-     - Loitering in restricted areas.  
+     - Loitering in restricted areas.
+     - Maybe in case of fire too.
    - Alerts security via **alarm sound + email/SMS notification**.  
 
 ---
