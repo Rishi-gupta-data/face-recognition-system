@@ -114,23 +114,20 @@ flowchart TD
 ## 6. Use Case Diagram  
 
 ```mermaid
-%% Use Case Diagram for Face Recognition Security System
-usecaseDiagram
-actor Admin
-actor Security
+flowchart TB
+    Admin([Admin]) --> UC1[(Add/Update Person in DB)]
+    Security([Security]) --> UC2[(Monitor Live CCTV)]
+    Security([Security]) --> UC3[(Search Recorded Video)]
+    Security([Security]) --> UC4[(Receive Alerts)]
 
-Admin --> (Add/Update Person in DB)
-Security --> (Monitor Live CCTV)
-Security --> (Search Recorded Video)
-Security --> (Receive Alerts)
-
-system "Face Recognition Security" {
-  (Face Recognition)
-  (Database Management)
-  (Suspicious Activity Detection)
-  (Recorded Video Search)
-}
-
+    subgraph "Face Recognition Security System"
+        UC1
+        UC2
+        UC3
+        UC4
+    end
+```
+---
 
 ## 7. Database Schema  
 
