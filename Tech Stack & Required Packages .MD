@@ -59,7 +59,3 @@
   - `python-dotenv` → Manage environment variables (DB keys, API keys).  
   - `requests` → API requests handling.  
 
----
-
-✅ This list ensures **end-to-end functionality**:  
-- Capture video → detect faces → recognize → log in DB → show in Streamlit → send alerts → deploy with Docker.  
