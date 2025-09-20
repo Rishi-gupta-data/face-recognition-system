@@ -46,3 +46,17 @@ if __name__ == "__main__":
     webcam = Webcam()   # default camera 0
     webcam.show()       # opens webcam window
     # webcam.capture_frame("test.jpg")  # capture single frame
+
+
+# ==============================
+# 📌 Variable Reference (Docs) - web_cam.py
+# ==============================
+
+# Webcam Variables
+# ----------------
+# self.cap          → OpenCV VideoCapture object (captures webcam frames)
+# self.window_name  → Name of the OpenCV window used to display frames
+
+# Methods
+# -------
+# release()         → Safely releases the webcam and closes OpenCV windows

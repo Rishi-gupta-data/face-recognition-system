@@ -108,3 +108,35 @@ class SmartFaceMeshWebcam(Webcam):
 if __name__ == "__main__":
     mesh_cam = SmartFaceMeshWebcam(max_faces=5)  # Detect up to 5 faces
     mesh_cam.show()
+
+
+# ==============================
+# 📌 Variable Reference (Docs) - mesh.py
+# ==============================
+
+# Inherited Variables (from Webcam)
+# ---------------------------------
+# self.cap          → OpenCV VideoCapture object (captures webcam frames)
+# self.window_name  → Name of the OpenCV window used to display frames
+
+# FaceMesh Variables
+# ------------------
+# self.mp_face_mesh → Reference to MediaPipe's FaceMesh solution
+# self.mp_drawing   → MediaPipe drawing utilities (for rendering landmarks)
+# self.face_mesh    → Initialized FaceMesh model with parameters:
+#                       - max_num_faces (default: 1)
+#                       - refine_landmarks (better detail on eyes/lips)
+#                       - min_detection_confidence (default: 0.5)
+#                       - min_tracking_confidence (default: 0.5)
+
+# Frame Processing Variables
+# --------------------------
+# ret, frame        → Frame capture result and the actual webcam frame
+# rgb_frame         → Frame converted from BGR (OpenCV) to RGB (for MediaPipe)
+# results           → Output of FaceMesh processing (contains detected landmarks)
+# landmarks         → Landmark points for a single detected face
+
+# Methods
+# -------
+# show()            → Runs the webcam loop, applies FaceMesh, and displays output
+# release()         → Releases webcam and closes OpenCV windows (inherited)
