@@ -1,31 +1,27 @@
-name: face-recog-env
+name: face-recog
 channels:
   - defaults
   - conda-forge
 dependencies:
   - python=3.10
   - pip
+  - numpy
+  - pandas
+  - matplotlib
+  - seaborn
+  - scikit-learn
+  - jupyterlab
+  - sqlalchemy
+  - opencv
+  - dlib
+  - tensorflow
+  - keras
+  - pytorch
+  - torchvision
+  - torchaudio
   - pip:
       - streamlit
       - fastapi
       - uvicorn
-      - opencv-python
       - deepface
       - face-recognition
-      - numpy
-      - pandas
-      - sqlalchemy
-      - supabase
-      - docker
-      - python-multipart
-      - aiofiles
-      - jupyterlab
-      - matplotlib
-      - seaborn
-      - scikit-learn
-      - tensorflow
-      - keras
-      - torch
-      - torchvision
-      - torchaudio
-      - transformers
