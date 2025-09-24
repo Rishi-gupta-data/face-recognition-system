@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.pyc
+*.log
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+
+# IDEs
+.vscode/
+.idea/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Project-specific ignores
+Backend/face_capture/3.10/
+Data/embeddings/file.txt
+Data/processed/file.txt
+Data/raw/file.txt
+Frontend/file.txt
+models/file.txt

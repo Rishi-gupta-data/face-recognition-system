@@ -7,10 +7,10 @@
 ### **Face Capture**  
 Goal: Build the foundation for face input into the system.  
 
-- [ ] Webcam Integration (`OpenCV`)  
-- [ ] Mesh for Face (landmarks with `dlib` / `face_recognition`)  
-- [ ] Face Data Input (20–30 images per person)  
-- [ ] Convert Face Data into Mesh/Embeddings (`face_recognition` / DeepFace)  
+- [X] Webcam Integration (`OpenCV`)  
+- [X] Mesh for Face (landmarks with `dlib` / `face_recognition`)  
+- [X] Face Data Input (20–30 images per person)  
+- [X] Convert Face Data into Mesh/Embeddings (`face_recognition` / DeepFace)  
 
 **Output:** `face_capture.py` – captures faces & extracts embeddings.  
 
@@ -31,10 +31,10 @@ Goal: Build the foundation for face input into the system.
 ##  Task 3 – Week 3  
 ### **Face Recognition & Matching**  
 
-- [ ] Extract embeddings from webcam frames  
-- [ ] Compare embeddings with DB-stored vectors  
-- [ ] Implement threshold-based match (<0.6 distance = Match)  
-- [ ] Output **Known Person / Unknown Person**  
+- [X] Extract embeddings from webcam frames  
+- [X] Compare embeddings with DB-stored vectors  
+- [X] Implement threshold-based match (<0.6 distance = Match)  
+- [X] Output **Known Person / Unknown Person**  
 
 **Output:** `recognizer.py` – recognition working with >85% accuracy.  
 
