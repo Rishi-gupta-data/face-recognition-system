@@ -1,53 +1,43 @@
-# 📌 Task – Frontend Development
-**Assigned To:** [Aashish]
+# 📌 Task – Frontend Development (Streamlit)
+**Assigned To:** [Developer Name]
 
-**Timeline:** 10 Days  
+**Timeline:** 5 Days
 
 ---
 
 ## **Objective**
-Build the **Streamlit dashboard** for the Face Recognition Security System. The UI will handle live feed, alerts, logs, and person management.
+Build the Streamlit user interface for the security system, allowing for live monitoring, person management, and viewing event logs/alerts.
 
 ---
 
 ## **Tasks & Deliverables**
 
-### **Days 1–2 – Dashboard Home**
-- Integrate **live webcam feed**.
-- Show **recognition status** (Known / Unknown) in real-time.
-- Display **alerts** prominently (red for unknown persons).
+### **Day 1 – Project Setup & Live Feed**
+- Set up the basic Streamlit project structure (`app.py`).
+- Create the main dashboard layout.
+- Integrate the live webcam feed and display the real-time recognition output (bounding boxes, names, mesh).
 
-### **Days 3–4 – Person Management**
-- Upload new person’s photo & details (name, ID, course).
-- Connect UI → FastAPI → Supabase to save person data.
-- Edit or delete registered persons.
+### **Day 2 – Person Management**
+- Design a UI form to register a new person (name, ID, etc.).
+- Implement functionality to let an admin upload a photo or use the webcam to capture an image for the new person.
+- Connect the form to the backend to store the new person's data in the database.
 
-### **Days 5–6 – Logs & Alerts**
-- Display logs in a **table** with filters:
-  - Time range
-  - Person
-  - Camera location
-- Highlight unknown or suspicious events.
+### **Day 3 – Logs & Alerts View**
+- Create a separate page or section to display event logs from the database.
+- Implement a table view for the logs with search and filter capabilities (e.g., by person, date, camera).
+- Highlight alerts for "Unknown" persons, for example, by using color-coding.
 
-### **Days 7–8 – Integration with Backend**
-- Connect **Streamlit** with **FastAPI endpoints**:
-  - `POST /capture`
-  - `POST /verify`
-  - `GET /logs`
-  - `GET /alerts`
-- Ensure **real-time updates** of recognition and alerts.
+### **Day 4 – Backend Integration**
+- Ensure all UI components are correctly calling the FastAPI backend endpoints (e.g., `/verify`, `/logs`, `/capture`).
+- Handle and display responses and errors from the backend in a user-friendly way.
 
-### **Days 9–10 – UI Polishing & Testing**
-- Improve dashboard usability (layout, colors, indicators).
-- Test **end-to-end workflow** with live feed + recognition + logs.
-- Write **`FRONTEND_DOCS.md`** for setup & usage instructions.
+### **Day 5 – Styling & Final Touches**
+- Polish the layout and styling of the dashboard for better usability and a clean look.
+- Add clear instructions, labels, and titles for all UI components.
+- Perform final end-to-end testing from the user interface.
 
 ---
 
 ## **Output**
-- Fully functional **Streamlit dashboard** with:
-  - Live feed
-  - Alerts
-  - Logs & search filters
-  - Person management
-- Documentation for deployment & integration.
+- A fully functional Streamlit application (`app.py`).
+- A user-friendly dashboard for interacting with the security system.
