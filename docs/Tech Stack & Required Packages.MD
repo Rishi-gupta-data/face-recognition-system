@@ -8,9 +8,9 @@
 ---
 
 ## ⚙️ Backend (API + Business Logic)  
-- **Framework:** [FastAPI](https://fastapi.tiangolo.com/)  
-  - Package: `fastapi`  
-  - Server: `uvicorn` (for running FastAPI server)  
+- **Framework:** [Flask](https://flask.palletsprojects.com/)  
+  - Package: `Flask`  
+  - Server: Built-in Werkzeug server (for development), Gunicorn (for production)  
   - Purpose: Expose REST APIs for face recognition, database access, and alerts.  
 
 ---

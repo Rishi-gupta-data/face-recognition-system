@@ -53,15 +53,26 @@ Goal: Build the foundation for face input into the system.
 ---
 
 ##  Task 5 – Week 5  
-### **Backend (FastAPI)**  
+### **Backend (Flask)**  
 
-- [ ] Setup FastAPI project structure  
+- [~] Setup Flask project structure (`In-Progress`)
+- [X] Create `POST /recognize` to identify a face from an image.
+- [X] Create `POST /search_by_photo` to find a person in recorded videos.
 - [ ] Create `POST /capture` (store embeddings)  
-- [ ] Create `POST /verify` (match face with DB)  
 - [ ] Create `GET /logs` (fetch logs)  
-- [ ] Create `GET /alerts` (real-time alerts)  
 
-**Output:** RESTful API server (`main.py`).  
+**Output:** RESTful API server (`main.py` in `Flask_Backend`).  
+
+---
+
+##  Task 5a – Week 5
+### **Recorded Video Search (Backend Logic)**
+
+- [X] Implemented logic to search through all videos in a directory.
+- [X] Analyzes frames to find matches for a target face embedding.
+- [X] Returns timestamps and video files for all occurrences.
+
+**Output:** `video_search.py` module.  
 
 ---
 
