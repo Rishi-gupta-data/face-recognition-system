@@ -4,7 +4,13 @@ import pickle
 import face_recognition
 
 class FaceRecognizer:
-    def __init__(self, embeddings_path='../../Data/embeddings'):
+    def __init__(self, embeddings_path=None):
+        if embeddings_path is None:
+            # Build the absolute path to the embeddings directory from the project root
+            base_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
+            self.embeddings_path = os.path.join(base_dir, 'Data', 'embeddings')
+        else:
+            self.embeddings_path = embeddings_path
         self.embeddings_path = embeddings_path
         self.known_faces = self.load_known_faces()
 
